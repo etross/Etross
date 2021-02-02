@@ -36,8 +36,8 @@ class Age{                                           //         [제어지시자의 종
 		System.out.println("나이:"+age);
 	}
 }
-class Phone{
-	private String phone;
+class Phone{                                         // 하나의 패키지안에는 하나의 public class만 존재하며 public 클래스 위에 선언된 서브 클래스는
+	private String phone;                            // 왠만하면 사용하지 않는다. 스파게티코드 방지.
 	 Phone(String p) {
 		phone = p;
 	}
