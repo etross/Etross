@@ -17,7 +17,7 @@ abstract class Kind{
 	int GetAge() {
 		return age;
 	}
-	abstract void print();                                           // 인자를 받는 매소드가 아닌 빈 메소드일때는, abstract를 사용한다.
+	abstract void print();                                           // 인자를 받는 매소드가 아닌 빈 메소드일때는, abstract를 사용한다.(추상클래스)
 	
 	void iq(int iq) {
 		this.iq = iq;
@@ -47,7 +47,7 @@ class Human extends Kind implements man{                             // 인터페이
 		System.out.println("(이름):"+GetName()+"(나이):"+GetAge()+",사람");
 	}
 	@Override
-	public void intel() {                                             // 인터페이스에서 오버라이딩된 메소드는 다른패키지에서도 사용가능하므로, public을 사용
+	public void intel() {                                             // 인터페이스에서 오버라이딩된 메소드는 public을 사용
 		System.out.println("'특이사항'- IQ"+GetIq()+"의 고지능을 가지고 있다");
 	}
 }
