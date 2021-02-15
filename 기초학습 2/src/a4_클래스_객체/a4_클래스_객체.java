@@ -73,7 +73,7 @@ public class a4_클래스_객체 {
 		adder.add();                                   // add()메소드 호출
 		System.out.println("a와 b값:"+adder.result_a()+","+adder.result_b()+"\n"); 
 		
-	//    (객체 선언)       (객체 생성)       = 선언과 생성 동시에
+	//   (객체의 변수생성)    (객체 생성)       = 객체 선언과 생성 그리고 변수생성을 동시에 실행
 		Employee emp = new Employee();                 // 독립된 매소드를 emp라는 참조변수로 생성
 		emp.Employee_info(new Interview("임현섭",31," 010-9780-9468"));
     // Employeed 클래스의 참조변수 emp안에 Employee_info매소드의 전달인자에서 Interview 클래스를 객체생성과 동시에 전달인자 전달
